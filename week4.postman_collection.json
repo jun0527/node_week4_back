@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "4297907e-760e-44a3-8b04-8c482890a246",
+		"name": "week4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19856868"
+	},
+	"item": [
+		{
+			"name": "取得全部貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://murmuring-retreat-30602.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"murmuring-retreat-30602",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": \"6293af72dd10c9eb7ac981d3\",\r\n    \"content\": \"test1\",\r\n    \"image\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://murmuring-retreat-30602.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"murmuring-retreat-30602",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://murmuring-retreat-30602.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"murmuring-retreat-30602",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://murmuring-retreat-30602.herokuapp.com/posts/:id",
+					"protocol": "https",
+					"host": [
+						"murmuring-retreat-30602",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "62963a8c89e41ffb5532cacc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯一筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"今天出門吃飯2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://murmuring-retreat-30602.herokuapp.com/posts/:id",
+					"protocol": "https",
+					"host": [
+						"murmuring-retreat-30602",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6293b42d487119dd129cecc8"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
