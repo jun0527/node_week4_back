@@ -6,10 +6,13 @@ const errHandle = require('../handle/errHandle');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-  const post = await Post.find({}).populate({
+  const timeSort = req.query.timeSort === 'asc' ? 'createdAt' : '-createdAt';
+  const search = {};
+  search.content = new RegExp(req.query.q);
+  const post = await Post.find(search).populate({
     path: 'user',
     select: 'name photo',
-  });
+  }).sort(timeSort);
   res.status(200).json({
     'status': 'success',
     'data': post,
