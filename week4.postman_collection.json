@@ -24,7 +24,70 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "取得全部貼文",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://murmuring-retreat-30602.herokuapp.com/posts",
+							"protocol": "https",
+							"host": [
+								"murmuring-retreat-30602",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "975"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"3cf-hiz+iv78dzMHaj+jUPoJZm7zMbw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 05 Jun 2022 06:50:46 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"6299e4dcd6a23aaf13410e90\",\n            \"content\": \"今天朋友約出門\\n要去吃麻辣鍋~~~~\",\n            \"image\": \"\",\n            \"user\": {\n                \"_id\": \"6293af72dd10c9eb7ac981d3\",\n                \"name\": \"John\",\n                \"photo\": \"https://thumb.fakeface.rest/thumb_male_10_8c02e4e9bdc0e103530691acfca605f18caf1766.jpg\"\n            },\n            \"likes\": 0,\n            \"createdAt\": \"2022-06-03T10:39:24.677Z\"\n        },\n        {\n            \"_id\": \"6299dc40d6a23aaf13410e7e\",\n            \"content\": \"外面看起來就超冷....\\n我決定回被窩繼續睡....>.<\",\n            \"image\": \"\",\n            \"user\": {\n                \"_id\": \"6293af72dd10c9eb7ac981d3\",\n                \"name\": \"John\",\n                \"photo\": \"https://thumb.fakeface.rest/thumb_male_10_8c02e4e9bdc0e103530691acfca605f18caf1766.jpg\"\n            },\n            \"likes\": 0,\n            \"createdAt\": \"2022-06-03T10:02:40.196Z\"\n        },\n        {\n            \"_id\": \"6299d6bcd6a23aaf13410e70\",\n            \"content\": \"今天吃蛋糕~~~~~~~~\",\n            \"image\": \"https://i.imgur.com/PJefTnS.jpg\",\n            \"user\": {\n                \"_id\": \"6293af72dd10c9eb7ac981d3\",\n                \"name\": \"John\",\n                \"photo\": \"https://thumb.fakeface.rest/thumb_male_10_8c02e4e9bdc0e103530691acfca605f18caf1766.jpg\"\n            },\n            \"likes\": 0,\n            \"createdAt\": \"2022-06-03T09:39:08.322Z\"\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "新增一筆貼文",
@@ -41,7 +104,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://murmuring-retreat-30602.herokuapp.com/posts",
+					"raw": "https://murmuring-retreat-30602.herokuapp.com/post",
 					"protocol": "https",
 					"host": [
 						"murmuring-retreat-30602",
@@ -49,7 +112,7 @@
 						"com"
 					],
 					"path": [
-						"posts"
+						"post"
 					]
 				}
 			},
@@ -81,7 +144,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://murmuring-retreat-30602.herokuapp.com/posts/:id",
+					"raw": "https://murmuring-retreat-30602.herokuapp.com/post/:id",
 					"protocol": "https",
 					"host": [
 						"murmuring-retreat-30602",
@@ -89,13 +152,13 @@
 						"com"
 					],
 					"path": [
-						"posts",
+						"post",
 						":id"
 					],
 					"variable": [
 						{
 							"key": "id",
-							"value": "62963a8c89e41ffb5532cacc"
+							"value": "629e3c85b6fe0139b354804e"
 						}
 					]
 				}
@@ -117,7 +180,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://murmuring-retreat-30602.herokuapp.com/posts/:id",
+					"raw": "https://murmuring-retreat-30602.herokuapp.com/post/:id",
 					"protocol": "https",
 					"host": [
 						"murmuring-retreat-30602",
@@ -125,13 +188,13 @@
 						"com"
 					],
 					"path": [
-						"posts",
+						"post",
 						":id"
 					],
 					"variable": [
 						{
 							"key": "id",
-							"value": "6293b42d487119dd129cecc8"
+							"value": "629e3c85b6fe0139b354804e"
 						}
 					]
 				}
